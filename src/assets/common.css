@@ -1,0 +1,114 @@
+/* 公共样式 */
+
+/*格子布局*/
+.td15, .td35, .td70, .td85{
+  padding: 10px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.td15{
+  width: 15%;
+}
+.td35{
+  width: 35%;
+}
+.td70{
+  width: 70%;
+}
+.td85{
+  width: 85%;
+}
+
+/*颜色*/
+.white {color: #fff;}
+.blue {color: #195A91;}
+.red{ color:#f00;}
+.bgw {background: #fff;}
+.bgg {background: #f5f5f5;}
+/*边框*/
+.bd {border: 1px solid #e6e6e6;}
+.bdb {border-bottom: 1px solid #e6e6e6;}
+.bdr {border-right: 1px solid #e6e6e6;}
+/*文字相关*/
+.tac{text-align: center;}
+.tal{text-align: left;}
+/*margin*/
+.mr5 {margin-right: 5px;}
+.mt10{margin-top: 10px;}
+.mb10{margin-bottom: 10px;}
+.ml10 {margin-left: 10px;}
+.mr10 {margin-right: 10px;}
+.mtb10 {margin: 10px 0;}
+.ml20 {margin-left: 20px;}
+.mt20 {margin-top: 20px;}
+.mr20 {margin-right: 20px;}
+.mlr30 {margin: 0 30px;}
+/*padding*/
+.p10 {padding: 10px;}
+.pr10 {padding-right: 10px;}
+/*flex*/
+.dsf {display: flex;}
+.fdc{flex-direction: column;}
+.jcc {justify-content: center;}
+.jcb {justify-content: space-between;}
+.aic {align-items: center;}
+.ais {align-items: flex-start;}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*长度/宽度*/
+.w15 {width: 15%;}
+.w35 {width: 35%;}
+.w50 {width: 50%;}
+.w70 {width: 70%;}
+.w85 {width: 85%;}
+.w100 {width: 100%;}
+.h50px {height: 50px;}
+.w100px {width: 100px;}
+/*其他*/
+.csp {cursor: pointer;}
+.bsbb{box-sizing: border-box;}
+
+
+/*解决Firefox下，文本框会有红色边框的问题*/
+input[required]:invalid, input:focus:invalid, textarea[required]:invalid, textarea:focus:invalid{box-shadow: none;}
+input[validateevent='true']{box-shadow: none;}
+body{margin: 0;padding:0;}
+
+/*覆盖 element-ui 默认样式*/
+
+/*菜单*/
+.el-menu{ border:none!important;}
+.el-submenu__title{
+  height: 50px!important;
+  line-height: 50px!important;
+}
+.el-submenu .el-menu-item{
+  height: 40px!important;
+  line-height: 40px!important;
+  background: #0A1C31 !important;
+  color: #fff!important;
+}
+.el-submenu__title{
+  background: #081526!important;
+  color: #fff!important;
+}
+.el-submenu__title i {
+  color: #fff!important;
+}
+.el-menu-item-group__title{
+  padding: 0!important;
+}
+
+textarea {
+  font-family: Arial;
+}
+a{
+  text-decoration: none;
+}
